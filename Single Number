@@ -1,0 +1,10 @@
+from collections import Counter
+arr=[4,1,2,1,2]
+arr1=dict(Counter(arr));
+m=1;key=0;
+for k,v in arr1.items():
+    if(v<=m):                                          
+        # print(k,v);
+        m=v;
+        key=k;
+print(key)
